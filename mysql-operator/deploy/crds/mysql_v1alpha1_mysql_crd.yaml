@@ -1,0 +1,19 @@
+apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  name: mysqls.mysql.operator.com
+spec:
+  group: mysql.operator.com
+  names:
+    kind: MySql
+    listKind: MySqlList
+    plural: mysqls
+    singular: mysql
+  scope: Namespaced
+  subresources:
+    status: {}
+  version: v1alpha1
+  versions:
+  - name: v1alpha1
+    served: true
+    storage: true

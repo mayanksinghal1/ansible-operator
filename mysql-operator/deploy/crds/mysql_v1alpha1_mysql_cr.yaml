@@ -1,0 +1,8 @@
+apiVersion: mysql.operator.com/v1alpha1
+kind: MySql
+metadata:
+  name: example-mysql
+spec:
+  # Add fields here
+  image: mysql:8
+  size: 1
